@@ -2,6 +2,7 @@
 @section('content')
 
   <div class="container">
+    <h4>Edit Word</h4>
     <div class="row">
 
       @if (session()->has('success'))
@@ -35,7 +36,7 @@
           @method('PUT')
           <div class="form-group">
             <label for="longdate">Date</label>
-            <input type="text" class="form-control bg-white" name="longdate" id="longdate" placeholder="YYYY-MM-DD" value="{{ ($word->longdate) ? $word->longdate : old('l_date') }}">
+            <input type="text" class="form-control bg-white" name="longdate" id="longdate" placeholder="YYYY-MM-DD" value="{{ ($word->longdate) ? $word->longdate : old('longdate') }}">
           </div>
           <div class="form-group">
             <label for="word">Word</label>

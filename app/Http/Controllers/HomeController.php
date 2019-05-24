@@ -26,8 +26,7 @@ class HomeController extends Controller
     {
       /* Grab all words */
       $words = Word::all()->values();
-
-        return view('home', compact('words'));
+      return view('home', compact('words'));
     }
 
     public function welcome(){

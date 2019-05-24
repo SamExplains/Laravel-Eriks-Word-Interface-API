@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3f7a727-1b19-49a1-826f-2f077031a0f6" name="Default Changelist" comment="" />
+    <list default="true" id="c3f7a727-1b19-49a1-826f-2f077031a0f6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_24_011541_create_words_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_24_011541_create_words_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/word/_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/word/_edit.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,44 +30,61 @@
         <counts>
           <entry key="env" value="2" />
           <entry key="js" value="3" />
-          <entry key="php" value="32" />
+          <entry key="log" value="1" />
+          <entry key="php" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="2" />
-          <entry key="Blade" value="10" />
+          <entry key="Blade" value="15" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="22" />
+          <entry key="Log" value="1" />
+          <entry key="PHP" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="15" />
-          <entry key="php" value="2398" />
+          <entry key="php" value="3336" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="15" />
-          <entry key="Blade" value="1212" />
-          <entry key="PHP" value="1186" />
+          <entry key="Blade" value="1577" />
+          <entry key="PHP" value="1759" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="922">
-              <caret line="52" column="63" lean-forward="true" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+            <state relative-caret-position="801">
+              <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WordController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="116" column="20" lean-forward="true" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
+              <folding>
+                <element signature="e#40#53#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,15 +93,17 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/word/_edit.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Word.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_05_24_011541_create_words_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/WordController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/word/_create.blae.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_05_24_011541_create_words_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/word/_edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/word/_create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/WordController.php" />
       </list>
     </option>
   </component>
@@ -183,6 +209,7 @@
     <option name="width" value="3119" />
     <option name="height" value="1480" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -251,7 +278,25 @@
             <path>
               <item name="EriksWordRestAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="EriksWordRestAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="word" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EriksWordRestAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EriksWordRestAPI" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EriksWordRestAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EriksWordRestAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EriksWordRestAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EriksWordRestAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,7 +305,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Word&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/app/Word.php&#10;_edit&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/word/_edit.blade.php&#10;WordCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/app/Http/Controllers/WordController.php&#10;HomeCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/app/Http/Controllers/HomeController.php&#10;web.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/routes/web.php&#10;app.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/js/app.js&#10;webpack&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/webpack.mix.js&#10;mix&#9;null&#9;null&#10;app.&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/layouts/app.blade.php&#10;app.blade&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/layouts/app.blade.php&#10;app.bla&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/layouts/app.blade.php&#10;app.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/layouts/app.blade.php&#10;LoginCon&#9;null&#9;null&#10;home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/home.blade.php&#10;Register&#9;null&#9;null&#10;env&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/.env&#10;welcome&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/welcome.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="_cre&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/word/_create.blade.php&#10;_edit&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/word/_edit.blade.php&#10;WordCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/app/Http/Controllers/WordController.php&#10;HomeCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/app/Http/Controllers/HomeController.php&#10;Word&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/app/Word.php&#10;HomeCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/app/Http/Controllers/HomeController.php&#10;web.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/routes/web.php&#10;app.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/js/app.js&#10;webpack&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/webpack.mix.js&#10;mix&#9;null&#9;null&#10;app.&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/layouts/app.blade.php&#10;app.blade&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/layouts/app.blade.php&#10;app.bla&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/layouts/app.blade.php&#10;app.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/layouts/app.blade.php&#10;LoginCon&#9;null&#9;null&#10;home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/home.blade.php&#10;Register&#9;null&#9;null&#10;env&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/.env&#10;welcome&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/EriksWordRestAPI/resources/views/welcome.blade.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -268,6 +313,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="de.espend.idea.laravel.ui.TemplateSettingsForm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/word" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -291,12 +341,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558659776024</updated>
-      <workItem from="1558659777310" duration="9835000" />
+      <workItem from="1558659777310" duration="12630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9835000" />
+    <option name="totallyTimeSpent" value="12630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,7 +363,7 @@
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09259863" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09259863" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -361,13 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/laravel-mix/src/Mix.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -396,16 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="961">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="793">
@@ -413,24 +446,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/word/_edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Word.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_24_011541_create_words_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -451,16 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WordController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="102" column="10" lean-forward="true" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -468,10 +477,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/word/_create.blae.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_24_011541_create_words_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/word/_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-05-24.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="318">
+          <caret line="1413" column="74" selection-start-line="1413" selection-start-column="74" selection-end-line="1413" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/word/_create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="922">
-          <caret line="52" column="63" lean-forward="true" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+        <state relative-caret-position="801">
+          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WordController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="116" column="20" lean-forward="true" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -18,9 +18,9 @@ class WordController extends Controller
    * @param Request $request
    * @return \Illuminate\Http\Response
    */
-    public function index(Request $request)
+    public function index()
     {
-      return response()->json(['A' => 'Hello']);
+
     }
 
     /**
@@ -30,7 +30,7 @@ class WordController extends Controller
      */
     public function create()
     {
-        //
+      return view('word._create');
     }
 
     /**
@@ -42,6 +42,28 @@ class WordController extends Controller
     public function store(Request $request)
     {
         //
+
+      $request->validate([
+        'longdate' => 'required',
+        'word' => 'required',
+      ]);
+
+      /* Check if word or date already exist and terminate if does */
+      $date_taken = Word::where('longdate', '=', filter_var($request->longdate, FILTER_SANITIZE_STRING))->first();
+      $word_taken = Word::where('word', '=', filter_var($request->word, FILTER_SANITIZE_STRING))->first();
+
+      if (is_null($date_taken) && is_null($word_taken)) {
+
+        Word::create([
+          'longdate' => $request->longdate,
+          'word' => $request->word,
+        ]);
+
+        return back()->with(['success' => 'Word '. $request->word .' has been created']);
+      } else
+        return back()->with(['message' => 'Word '. $request->word .' or Date '. $request->longdate .' is already taken.']);
+
+
     }
 
     /**
@@ -91,7 +113,8 @@ class WordController extends Controller
      */
     public function destroy(Word $word)
     {
-        //
+      Word::destroy($word->id);
+      return back();
     }
 
     public function returnStoredWord(string $id_date) {

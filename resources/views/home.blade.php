@@ -22,7 +22,13 @@
         {{-- Word Dashboard --}}
         <div class="col-12 mt-4">
             <div class="card">
-                <div class="card-header">Word List</div>
+              <div class="card-header">Word List
+
+                <a href="{{ route('word.create') }}">
+                  <button class="float-right btn btn-success">+ Add New Word</button>
+                </a>
+
+              </div>
 
                 <div class="card-body">
 
@@ -38,23 +44,34 @@
                     </thead>
                     <tbody>
 
-                    @foreach($words as $word)
-                      <tr>
-                        <th scope="row">{{ $word->id }}</th>
-                        <td>{{ $word->longdate }}</td>
-                        <td>{{ $word->word }}</td>
-                        <td>
-                          <a href="{{ route('word.edit', $word) }}">
-                            <button class="btn btn-primary">Edit</button>
-                          </a>
-                        </td>
-                        <td>
-                          <a href="{{ route('word.edit', $word) }}">
-                            <button class="btn btn-danger">Delete</button>
-                          </a>
-                        </td>
-                      </tr>
-                    @endforeach
+                    @isset($words)
+                      @foreach($words as $word)
+                        <tr>
+                          <th scope="row">{{ $word->id }}</th>
+                          <td>{{ $word->longdate }}</td>
+                          <td>{{ $word->word }}</td>
+                          <td>
+                            <a href="{{ route('word.edit', $word) }}">
+                              <button class="btn btn-primary">Edit</button>
+                            </a>
+                          </td>
+                          <td>
+                            <form action="{{route('word.destroy', [$word->id] )}}" method="post">
+                              @method('DELETE')
+                              @csrf {{--  Blade directive token--}}
+                              <button type="submit" class="btn btn-danger" onclick="confirm('Are you sure?')">Delete</button>
+                            </form>
+                          </td>
+                        </tr>
+                      @endforeach
+
+                      @else
+
+                      <div class="alert-danger p-2">
+                        No words found!
+                      </div>
+
+                    @endisset
 
                     </tbody>
                   </table>
