@@ -17,6 +17,19 @@
     </div>
     @endif
 
+    <div class="col-8 mx-auto mt-4 mb-4">
+      <div class="dropdown">
+        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Stored Words
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          @foreach($words as $w)
+            <a class="dropdown-item mb-3 mt-3" href="{{ route('word.edit', $w->id) }}"><span class="alert-primary p-2">{{ $w->longdate }}</span> : <b>{{ $w->word }}</b></a>
+          @endforeach
+        </div>
+      </div>
+    </div>
+
     <div class="col-8 mx-auto">
       <a href="{{ route('home') }}">
         Back

@@ -30,7 +30,8 @@ class WordController extends Controller
      */
     public function create()
     {
-      return view('word._create');
+      $words = Word::all();
+      return view('word._create', ['words' => $words]);
     }
 
     /**
