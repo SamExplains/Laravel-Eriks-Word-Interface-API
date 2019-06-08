@@ -119,12 +119,17 @@ class WordController extends Controller
     }
 
     public function returnStoredWord(string $id_date) {
-//      $request_date = filter_var($request->all());
-      $record = Word::where('longdate', '=', filter_var($id_date, FILTER_SANITIZE_STRING))->first();
 
-      if ($record)
-        return response()->json(['date' => $record->longdate, 'word' => $record->word ]);
-      else
-        return response('No record found', 404);
+      if ($id_date > '2019-01-01') {
+        $record = Word::where('longdate', '=', filter_var($id_date, FILTER_SANITIZE_STRING))->first();
+
+        if ($record)
+          return response()->json(['date' => $record->longdate, 'word' => $record->word ]);
+        else
+          return response('No record found.', 404);
+      } else {
+        return response('Invalid date.', 404);
+      }
+
     }
 }
