@@ -37,7 +37,7 @@ class Kernel extends ConsoleKernel
            'longdate' => $today,
            'word' => ucfirst($faker->word)
          ]);
-       })->dailyAt('6:00');
+       })->everyMinute();
 
     }
 
