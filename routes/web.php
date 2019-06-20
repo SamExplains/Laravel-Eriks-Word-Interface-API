@@ -11,6 +11,7 @@
 |
 */
 
+use App\Word;
 use Illuminate\Support\Carbon;
 
 Auth::routes();
@@ -18,6 +19,13 @@ Auth::routes();
 Route::get('/', 'HomeController@welcome')->name('welcome');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/retrieve/{isodate}', 'WordController@returnStoredWord');
+//Route::get('/retrieve/{isodate}', function ($date) {
+//
+//  $word = Word::find(1);
+//
+//  return response()->json(['entry' => json_decode(unserialize($word->word_meta), true), 'lexical' => json_decode(unserialize($word->lexi_stat_meta), true)]);
+//
+//});
 
 
 Route::resources([

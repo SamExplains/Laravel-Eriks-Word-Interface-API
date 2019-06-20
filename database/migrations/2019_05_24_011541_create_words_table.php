@@ -17,6 +17,8 @@ class CreateWordsTable extends Migration
             $table->bigIncrements('id');
             $table->string('longdate')->unique();
             $table->string('word');
+            $table->text('word_meta');
+            $table->text('lexi_stat_meta');
             $table->timestamps();
         });
     }

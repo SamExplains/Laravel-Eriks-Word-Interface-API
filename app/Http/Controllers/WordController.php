@@ -124,7 +124,7 @@ class WordController extends Controller
         $record = Word::where('longdate', '=', filter_var($id_date, FILTER_SANITIZE_STRING))->first();
 
         if ($record)
-          return response()->json(['date' => $record->longdate, 'word' => $record->word ]);
+          return response()->json(['date' => $record->longdate, 'word' => $record->word, 'entry' => json_decode(unserialize($record->word_meta), true), 'lexical' => json_decode(unserialize($record->lexi_stat_meta), true) ]);
         else
           return response('No record found.', 404);
       } else {
